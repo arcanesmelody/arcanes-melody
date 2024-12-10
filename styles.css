@@ -1,0 +1,344 @@
+/*
+Author:Araceli Espinoza
+File Name: styles.css
+
+*/
+
+/* CSS Reset */
+
+body, header, nav, main, footer, img, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body*/
+body{
+	background-color:#ffccdd;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    font-size: 3em;
+	background-color:black;
+    color: #fff;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #000000;
+	color:white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 2em;
+}
+
+nav li a {
+    display: block;
+	background-color:black;
+    color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #ffccdd; 
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.action {
+    font-size: 1.75em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.social-media {
+	display: flex; 
+	justify-content: left;
+	gap: 20px; 
+	padding: 20px;
+	}
+	
+.social-media a { 
+    text-decoration: none;
+	color: #000; 
+	font-size: 24px;
+	} 
+.social-media a:hover { 
+    color: #000000; /* Change color on hover */ 
+}
+
+		 
+/* Style rules for music content */
+
+#music
+    clear: left;
+    background-color: #ffb3e6;
+    padding: 1% 2%;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center; 
+	} 
+	
+	.container img {
+		width: 45%; /* Adjust the percentage to change the size */ 
+		max-width: 300px; /* Maximum width for the image */
+		margin: 10px;
+		} 
+		
+		.middle { 
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		} 
+		
+		.middle img {
+		width: 50%; /* Adjust the percentage to change the size */ 
+		max-width: 300px; /* Maximum width for the image */
+		}
+
+/* Style rules for coffee-tea*/
+#coffee-tea{
+    text-align: left;
+}
+
+#coffee-tea a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-container {
+	font-family: Arial, sans-serif; 
+	position: relative;
+}
+
+.image-right { 
+	width: 150px; /* Adjust size as needed */ 
+	height: auto; /* Ensures the image is a square */ 
+	max-width:150px;
+	max-height:250px;
+	border-radius: 10px; /* Adjust to make corners rounded */ 
+	object-fit: cover; /* Ensures the image covers the area, cropping if necessary */ 
+	float: right; /* Positions the image on the right side */ 
+	margin-left: 10px; /* Space between image and text */
+	margin-bottom: 10px;
+	}
+.clear{
+	 clear:both;
+}
+
+/* Style rules for nails content */
+#nails {
+    text-align: left;
+}
+
+#nails a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style for the container */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: main content is 2x the width of the sidebar */
+    gap: 20px; /* Space between columns */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Style for the main content */
+.main-content {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the sidebar */
+.sidebar {
+    background-color: #f7d4e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style for the images in the sidebar */
+.image-right {
+    width: 100%; /* Make the image take up the full width of the sidebar */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between images */
+}
+
+
+/* Style rules for anime-shows content */
+#anime-shows {
+    text-align: center;
+}
+
+#anime-shows a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gallery { 
+ display: flex; 
+ flex-wrap: wrap;
+ justify-content: space-around;
+ text-align: center; 
+ } 
+ 
+ .gallery-item {
+	 flex: 1 1 22%;
+	  margin: 10px;
+	  box-sizing: border-box;
+	  } 
+  
+ .gallery-item img { 
+ width: 100%; 
+ height: auto; 
+ border-radius: 10px; 
+ } 
+ 
+ .gallery-item p {
+	 margin-top: 5px; 
+	 }
+
+/* Style rules for travel content */
+#travel {
+    text-align: left;
+}
+
+#travel a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gallery {
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: space-around;
+	text-align: center; 
+	} 
+.gallery-item {
+	flex: 1 1 22%;
+	margin: 10px; 
+	box-sizing: border-box; 
+	} 
+.gallery-item img {
+	width: 100%; 
+	height: auto;
+	border-radius: 10px;
+	cursor: pointer; 
+	transition: transform 0.2s;
+	} 
+.gallery-item img:hover {
+	transform: scale(1.05);
+	}
+.modal {
+	display: none;
+	position: fixed; 
+	z-index: 1; 
+	left: 0; 
+	top: 0; 
+	width: 100%;
+	height: 100%; 
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+	} 
+	
+.modal-content { 
+   margin: 15% auto; 
+   display: block;
+   width: 80%; 
+   max-width: 700px; 
+   }
+
+ .close {
+	 position: absolute;
+	 top: 15px; 
+	 right: 35px; 
+	 color: #fff; 
+	 font-size: 40px; 
+	 font-weight: bold; 
+	 transition: 0.3s; 
+}
+
+.close:hover,
+ .close:focus {
+	 color: #bbb;
+	 text-decoration: none;
+	 cursor: pointer;
+	 }
+
+
+
+
+
+
+
+
+/* Style rules for footer content */
+
+.footer-line {
+	border: none;
+	height: 1px; /* Adjust height to make the line thin */
+	background-color: #000000; /* Adjust color as needed */ 
+	margin: 20px 0; /* Adjust spacing around the line */
+}
+	
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
+}
+
+/*Mobile viewport*/
+@media (max-width: 600px) {
+    header {
+        font-size: 2em; 
+    }
+
+    nav li {
+        display: block; 
+        font-size: 1.5em; 
+    }
+
+    main {
+        padding: 1%;
+    }
+
+    .action {
+        font-size: 1.5em;
+    }
